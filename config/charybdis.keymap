@@ -62,7 +62,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp LCLK &trans  &mkp RCLK  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
-            trackball-bindlings = <&tsl_fine>;
+            trackball-bindings = <&tsl_fine>;
         };
     };
 };
