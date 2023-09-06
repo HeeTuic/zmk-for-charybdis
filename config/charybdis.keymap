@@ -50,8 +50,17 @@
             bindings = <
 &trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &mkp LCLK
+&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &mo 4   &trans  &trans  &mkp LCLK
                            &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+            >;
+        };
+
+        Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
