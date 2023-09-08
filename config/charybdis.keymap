@@ -45,7 +45,6 @@
             >;
 
             trackball-bindings = <&tmv_coarse>;
-            trackball-bindings = <&tsl_scroll>;
         };
 
         Lower {
@@ -84,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans
             >;
-
+            trackball-bindings = <&tsl_scroll>;
         };
 
         Move {
@@ -94,7 +93,6 @@
 &mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mo 3  &mkp RCLK  &trans  &trans
                              &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
-
             trackball-bindings = <&tsl_fast>;
         };
     };
