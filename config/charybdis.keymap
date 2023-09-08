@@ -77,7 +77,7 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans
@@ -88,7 +88,7 @@
 
         Move {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mo 4  &trans  &trans  &trans
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mo 3  &mkp RCLK  &trans  &trans
                              &trans  &trans  &trans    &trans  &trans
