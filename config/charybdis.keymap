@@ -11,9 +11,9 @@
 
 / {
     behaviors {
-        tsl_scroll: behavior_trackball_scroll {
+        tsl_scroll_slow: behavior_trackball_scroll_slow{
             compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_SCROLL";
+            label = "TRACKBALL_SCROLL_SLOW";
             #trackball-binding-cells = <0>;
             mode = "scroll-mode";
             flavor = "y-only";
@@ -21,7 +21,7 @@
             scale_factor = <2>;
             };
         
-        tsl_fast: behavior_trackball_move_fast {
+        tsl_move_fast: behavior_trackball_move_fast {
             compatible = "zmk,behavior-point-device-incremental";
             label = "TRACKBALL_MOVE_FAST";
             #trackball-binding-cells = <0>;
@@ -83,7 +83,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans
             >;
-            trackball-bindings = <&tsl_scroll>;
+            trackball-bindings = <&tsl_scroll_slow>;
         };
 
         Move {
@@ -93,7 +93,7 @@
 &mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mo 3  &mkp RCLK  &trans  &trans
                              &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
-            trackball-bindings = <&tsl_fast>;
+            trackball-bindings = <&tsl_move_fast>;
         };
     };
 };
