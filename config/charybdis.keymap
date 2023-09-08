@@ -11,9 +11,9 @@
 
 / {
     behaviors {
-        tsl_slow: behavior_trackball_scroll_slow {
+        tsl_scroll: behavior_trackball_scroll {
             compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_SCROLL_SLOW";
+            label = "TRACKBALL_SCROLL";
             #trackball-binding-cells = <0>;
             mode = "scroll-mode";
             flavor = "y-only";
