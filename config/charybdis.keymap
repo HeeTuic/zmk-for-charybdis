@@ -11,7 +11,7 @@
 
 / {
     behaviors {
-        tsl_scroll: behavior_trackball_scroll_slow {
+        tsl_slow: behavior_trackball_scroll_slow {
             compatible = "zmk,behavior-point-device-incremental";
             label = "TRACKBALL_SCROLL_SLOW";
             #trackball-binding-cells = <0>;
@@ -33,7 +33,7 @@
             scale_factor = <4>;
         };
     };
-    
+};    
     keymap {
         compatible = "zmk,keymap";
 
