@@ -87,6 +87,7 @@
             >;
 
             trackball-bindings = <&tsl_scroll>;
+            trackball-bindings = <&tsl_fast>;
         };
     };
 };
