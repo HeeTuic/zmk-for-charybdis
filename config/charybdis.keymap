@@ -71,7 +71,7 @@
             bindings = <
 &trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
+&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &mo 5  &mkp RCLK  &trans  &trans
                            &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
             trackball-bindings = <&tsl_move_fast>;
@@ -91,7 +91,7 @@
             bindings = <
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mo 3  &mkp RCLK  &trans  &trans
+&mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
                              &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
 
