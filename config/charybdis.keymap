@@ -18,7 +18,7 @@
             mode = "scroll-mode";
             flavor = "y-only";
             scale_mode = "multiplier";
-            scale_factor = <2>;
+            scale_factor = <1>;
             };
         
         tsl_move_fast: behavior_trackball_move_fast {
@@ -74,6 +74,7 @@
 &mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
                            &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
+            trackball-bindings = <&tsl_move_fast>;
         };
 
         Scroll {
@@ -93,7 +94,7 @@
 &mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mo 3  &mkp RCLK  &trans  &trans
                              &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
-            trackball-bindings = <&tsl_move_fast>;
+
         };
     };
 };
