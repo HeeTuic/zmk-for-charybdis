@@ -87,6 +87,7 @@
             >;
 
             trackball-bindings = <&tsl_scroll>;
+        };
 
         Move {
             bindings = <
