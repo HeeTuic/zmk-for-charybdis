@@ -21,7 +21,6 @@
             scale_factor = <2>;
         };
     };
-/ {
      behaviors {
         tsl_fast: behavior_trackball_move_fast {
             compatible = "zmk,behavior-point-device-incremental";
@@ -32,8 +31,8 @@
             scale_mode = "multiplier";
             scale_factor = <4>;
         };
-    };
-};    
+    };   
+};  
     keymap {
         compatible = "zmk,keymap";
 
