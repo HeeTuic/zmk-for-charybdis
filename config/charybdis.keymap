@@ -9,28 +9,6 @@
     quick-tap-ms = <150>;
 };
 
-/ {
-    behaviors {
-        tsl_scroll_slow: behavior_trackball_scroll_slow{
-            compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_SCROLL_SLOW";
-            #trackball-binding-cells = <0>;
-            mode = "scroll-mode";
-            flavor = "y-only";
-            scale_mode = "multiplier";
-            scale_factor = <1>;
-            };
-        
-        tsl_move_fast: behavior_trackball_move_fast {
-            compatible = "zmk,behavior-point-device-incremental";
-            label = "TRACKBALL_MOVE_FAST";
-            #trackball-binding-cells = <0>;
-            mode = "move-mode";
-            flavor = "default";
-            scale_mode = "multiplier";
-            scale_factor = <4>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -69,32 +47,12 @@
 
         Mouse {
             bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK  &trans  &trans  &trans     &trans  &trans       &trans  &mkp LCLK  &mo 5  &mkp RCLK  &trans  &trans
-                           &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-            >;
-            trackball-bindings = <&tsl_move_fast>;
-        };
-
-        Scroll {
-            bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans    &trans  &trans
-            >;
-            trackball-bindings = <&tsl_scroll_slow>;
-        };
-
-        Move {
-            bindings = <
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
+&bootloader  &trans  &trans  &mwh SCROLL_UP  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&mkp MCLK       &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &trans  &mkp RCLK  &trans  &trans
-                             &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
+&trans       &trans  &trans  &mwh SCROLL_DOWN  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                    &mkp RCLK  &mkp LCLK  &mkp MCLK    &trans  &trans
             >;
+            trackball-bindings = <&tsl>;
+        };
 
         };
-    };
-};
