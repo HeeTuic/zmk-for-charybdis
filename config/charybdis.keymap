@@ -55,4 +55,3 @@
             trackball-bindings = <&tsl>;
         };
     };
-};
