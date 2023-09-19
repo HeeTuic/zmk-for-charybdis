@@ -9,7 +9,6 @@
     quick-tap-ms = <150>;
 };
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -17,10 +16,10 @@
         Base {
             label = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp T    &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F        &kp G    &kp H        &kp J          &lt 4 K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V        &kp B    &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                         &kp LWIN  &lt 1 SPACE  &kp LALT    &lt 2 ENTER  &kp BACKSPACE
+&kp TAB           &kp Q  &kp W  &kp E     &kp R        &kp T       &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BSPC
+&kp LCTRL         &kp A  &kp S  &kp D     &kp F        &kp G       &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp APOS
+&lt 3 LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V        &kp B       &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                                &kp LWIN  &lt 1 SPACE  &kp LALT    &lt 2 ENTER  &kp BACKSPACE
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -39,20 +38,21 @@
         Raise {
             label = "Raise";
             bindings = <
-&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans          &kp UNDER  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans      &trans      &trans      &trans     &trans          &kp MINUS  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans       &kp UNDER  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans      &trans      &trans      &trans     &trans       &kp MINUS  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                 &kp LGUI    &kp SPACE  &kp LALT     &trans     &trans
             >;
         };
 
         Mouse {
             bindings = <
-&bootloader  &trans  &trans  &mwh SCROLL_UP  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &mwh SCROLL_DOWN  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                    &mkp RCLK  &mkp LCLK  &mkp MCLK    &trans  &trans
+&bootloader  &trans  &trans  &mwh SCROLL_UP    &trans     &trans       &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans       &trans  &trans  &trans            &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &mwh SCROLL_DOWN  &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                             &mkp RCLK         &mkp LCLK  &mkp MCLK    &trans  &trans
             >;
+
             trackball-bindings = <&tsl>;
         };
     };
