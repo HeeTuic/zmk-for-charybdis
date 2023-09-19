@@ -22,7 +22,7 @@
                                 &kp LWIN  &lt 1 SPACE  &kp LALT    &lt 2 ENTER  &kp BACKSPACE
             >;
 
-            trackball-bindings = <&tmv_coarse>;
+            trackball-bindings = <&tmv>;
         };
 
         Lower {
