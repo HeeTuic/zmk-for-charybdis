@@ -10,6 +10,7 @@
 };
 
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -55,3 +56,4 @@
             trackball-bindings = <&tsl>;
         };
     };
+};
