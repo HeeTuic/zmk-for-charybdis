@@ -19,7 +19,7 @@
 &kp TAB         &kp Q  &kp W  &kp E     &kp R        &kp T    &kp Y      &kp U            &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL       &kp A  &kp S  &kp D     &kp F        &kp G    &kp H      &kp J            &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V        &kp B    &kp N      &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                              &kp LWIN  &lt 2 SPACE  &mo 3    &kp ENTER  &lt 3 BACKSPACE
+                              &kp LWIN  &lt 1 SPACE  &mo 3    &kp ENTER  &lt 2 BACKSPACE
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -28,20 +28,20 @@
         Lower {
             label = "Lower";
             bindings = <
-&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6
-&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
-                                             &trans        &kp SPACE        &trans          &trans        &trans
+&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &trans        &trans         &trans        &trans        &trans        &trans
+&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &trans        &trans         &trans        &trans        &trans        &trans
+                                             &trans        &kp SPACE        &trans          &trans        &kp BACKSPACE
             >;
         };
 
         Raise {
             label = "Raise";
             bindings = <
-&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans       &kp UNDER  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans      &trans      &trans      &trans     &trans       &kp MINUS  &kp PLUS   &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
-                                &kp LGUI    &kp SPACE  &kp LALT     &trans     &trans
+&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans       &kp UNDER  &kp EQUAL      &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans      &trans      &trans      &trans     &trans       &kp MINUS  &kp PLUS       &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
+                                &trans      &kp SPACE  &trans       &trans     &kp BACKSPACE
             >;
         };
 
