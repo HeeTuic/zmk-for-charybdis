@@ -47,19 +47,10 @@
 
         Mouse {
             bindings = <
-&none        &none  &none  &mwh SCROLL_UP    &none      &none        &none      &none      &mwh SCROLL_UP    &none  &none  &none
-&none        &none  &none  &mwh SCROLL_DOWN  &none      &none        &none      &none      &mwh SCROLL_DOWN  &none  &none  &reset
-&bootloader  &none  &none  &none             &none      &none        &none      &none      &none             &none  &none  &bootloader
-                           &mkp RCLK         &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp LCLK
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans       &trans  &trans  &mwh SCROLL_UP    &trans     &trans    &trans     &trans     &mwh SCROLL_UP    &trans  &trans  &trans
+&trans       &trans  &trans  &mwh SCROLL_DOWN  &trans     &trans    &trans     &trans     &mwh SCROLL_DOWN  &trans  &trans  &reset
+&bootloader  &trans  &trans  &trans            &trans     &trans    &trans     &trans     &trans            &trans  &trans  &bootloader
+                             &mkp RCLK         &mkp LCLK  &trans    &mkp RCLK  &mkp LCLK
             >;
         };
     };
