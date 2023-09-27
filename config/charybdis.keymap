@@ -47,9 +47,9 @@
 
         Mouse {
             bindings = <
-&trans       &trans  &trans  &mwh SCROLL_UP    &trans     &trans    &trans     &trans     &mwh SCROLL_UP    &trans  &trans  &trans
+&bootloader       &trans  &trans  &mwh SCROLL_UP    &trans     &trans    &trans     &trans     &mwh SCROLL_UP    &trans  &trans  &trans
 &trans       &trans  &trans  &mwh SCROLL_DOWN  &trans     &trans    &trans     &trans     &mwh SCROLL_DOWN  &trans  &trans  &reset
-&bootloader  &trans  &trans  &trans            &trans     &trans    &trans     &trans     &trans            &trans  &trans  &bootloader
+&mkp MCLK  &trans  &trans  &trans            &trans     &trans    &trans     &trans     &trans            &trans  &trans  &bootloader
                              &mkp RCLK         &mkp LCLK  &trans    &mkp RCLK  &mkp LCLK
             >;
         };
