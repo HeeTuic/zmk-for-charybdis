@@ -49,8 +49,8 @@
             bindings = <
 &bootloader  &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &reset
-&mkp MCLK    &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &bootloader
-                             &mkp RCLK  &mkp LCLK  &trans    &mkp RCLK  &mkp LCLK
+&trans       &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &bootloader
+                             &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp LCLK
             >;
         };
     };
