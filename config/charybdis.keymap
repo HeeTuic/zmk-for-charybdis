@@ -16,10 +16,10 @@
         Base {
             label = "Base";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R        &kp T    &kp Y      &kp U            &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F        &kp G    &kp H      &kp J            &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V        &kp B    &kp N      &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                              &kp LWIN  &lt 1 SPACE  &mo 3    &kp ENTER  &lt 2 BACKSPACE
+&kp TAB         &kp Q    &kp W  &kp E     &kp R        &kp T           &kp Y      &kp U            &kp I      &kp O    &kp P        &kp BSPC
+&kp LCTRL       &kp A    &kp S  &kp D     &kp F        &kp G           &kp H      &kp J            &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LEFT_SHIFT  &lt 3 Z  &kp X  &kp C     &kp V        &kp B           &kp N      &kp M            &kp COMMA  &kp DOT  &lt 3 SLASH  &kp RSHIFT
+                                &kp LWIN  &lt 1 SPACE  &kp LEFT_ALT    &kp ENTER  &lt 2 BACKSPACE
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -28,29 +28,29 @@
         Lower {
             label = "Lower";
             bindings = <
-&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &mwh SCROLL_UP        &trans         &trans        &trans        &trans        &trans
-&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &mwh SCROLL_DOWN        &trans         &trans        &trans        &trans        &trans
-                                             &trans        &kp SPACE        &trans          &trans        &kp BACKSPACE
+&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &mwh SCROLL_UP    &trans         &trans        &trans        &trans        &trans
+&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &mwh SCROLL_DOWN  &trans         &trans        &trans        &trans        &trans
+                                             &trans        &kp SPACE        &trans          &trans            &kp BACKSPACE
             >;
         };
 
         Raise {
             label = "Raise";
             bindings = <
-&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &mwh SCROLL_UP       &kp UNDER  &kp EQUAL      &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans      &trans      &trans      &trans     &mwh SCROLL_DOWN       &kp MINUS  &kp PLUS       &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
-                                &trans      &kp SPACE  &trans       &trans     &kp BACKSPACE
+&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT           &kp CARET  &kp AMPS       &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &mwh SCROLL_UP      &kp UNDER  &kp EQUAL      &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans      &trans      &trans      &trans     &mwh SCROLL_DOWN    &kp MINUS  &kp PLUS       &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
+                                &trans      &kp SPACE  &trans              &trans     &kp BACKSPACE
             >;
         };
 
         Mouse {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans     &trans    &trans     &trans     &trans   &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans     &trans    &trans     &trans     &trans   &trans  &trans  &reset
-&mkp MCLK    &trans  &trans  &trans  &trans     &trans    &trans     &trans     &trans   &trans  &trans  &bootloader
-                             &mkp RCLK         &mkp LCLK  &trans     &mkp RCLK  &mkp LCLK
+&bootloader  &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &reset
+&mkp MCLK    &trans  &trans  &trans     &trans     &trans    &trans     &trans     &trans  &trans  &trans  &bootloader
+                             &mkp RCLK  &mkp LCLK  &trans    &mkp RCLK  &mkp LCLK
             >;
         };
     };
