@@ -30,7 +30,7 @@
             bindings = <
 &kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &trans            &trans         &trans        &trans        &trans        &trans
-&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &trans            /&trans         &trans        &trans        &trans        &trans
+&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &trans            &trans         &trans        &trans        &trans        &trans
                                              &trans        &kp SPACE        &trans          &trans            &kp BACKSPACE
             >;
         };
