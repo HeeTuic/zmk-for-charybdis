@@ -28,29 +28,29 @@
         Lower {
             label = "Lower";
             bindings = <
-&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &trans            &trans         &trans        &trans        &trans        &trans
-&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &trans            &trans         &trans        &trans        &trans        &trans
-                                             &trans        &kp SPACE        &trans          &trans            &kp BACKSPACE
+&kp ESCAPE    &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp CAPSLOCK  &kp LEFT         &kp DOWN      &kp UP_ARROW  &kp RIGHT_ARROW  &trans          &trans        &trans         &trans        &trans        &trans        &trans
+&kp LEFT_ALT  &kp C_VOLUME_UP  &kp C_MUTE    &kp C_VOL_DN  &trans           &trans          &trans        &trans         &trans        &trans        &trans        &trans
+                                             &trans        &kp SPACE        &trans          &trans        &kp BACKSPACE
             >;
         };
 
         Raise {
             label = "Raise";
             bindings = <
-&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT           &kp CARET  &kp AMPS       &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
-&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans              &kp UNDER  &kp EQUAL      &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans      &trans      &trans      &trans     &trans              &kp MINUS  &kp PLUS       &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
-                                &trans      &kp SPACE  &trans              &trans     &kp BACKSPACE
+&trans  &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS       &kp ASTERISK  &kp LPAR  &kp RPAR  &kp DEL
+&trans  &bt BT_CLR  &bt BT_PRV  &bt BT_NXT  &trans     &trans       &kp UNDER  &kp EQUAL      &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans      &trans      &trans      &trans     &trans       &kp MINUS  &kp PLUS       &kp LBRC      &kp RBRC  &kp PIPE  &kp TILDE
+                                &trans      &kp SPACE  &trans       &trans     &kp BACKSPACE
             >;
         };
 
         Mouse {
             bindings = <
-&bootloader  &trans  &trans  &trans     &trans     &trans                &trans             &trans     &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans     &trans     &mwh SCROLL_UP        &mwh SCROLL_UP     &trans     &trans  &trans  &trans  &reset
-&trans       &trans  &trans  &trans     &trans     &mwh SCROLL_DOWN      &mwh SCROLL_DOWN   &trans     &trans  &trans  &trans  &bootloader
-                             &mkp RCLK  &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp LCLK
+&bootloader  &trans  &trans  &trans     &trans     &trans              &trans            &trans     &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans     &trans     &mwh SCROLL_UP      &mwh SCROLL_UP    &trans     &trans  &trans  &trans  &sys_reset
+&trans       &trans  &trans  &trans     &trans     &mwh SCROLL_DOWN    &mwh SCROLL_DOWN  &trans     &trans  &trans  &trans  &bootloader
+                             &mkp RCLK  &mkp LCLK  &mkp MCLK           &mkp RCLK         &mkp LCLK
             >;
         };
     };
