@@ -21,11 +21,16 @@
 		;
 };
 
-&spi1 {
-	compatible = "nordic,nrf-spim";
-	status = "okay";
-	mosi-pin = <6>;
-	// Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-	sck-pin = <5>;
-	miso-pin = <7>;
+// trackball bus
+&spi0 {
+	status = "okay"; //okay
+	sck-pin = <8>;
+	mosi-pin = <17>;
+	miso-pin = <17>; // same as mosi (3-wire spi)
+	cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+};
+
+&trackball {
+	status = "okay"; //okay
+	irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
