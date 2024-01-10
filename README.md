@@ -1,1 +1,1 @@
-zmk-config for charybdis mini(3x6)
+zmk-config for charybdis (4x6)
