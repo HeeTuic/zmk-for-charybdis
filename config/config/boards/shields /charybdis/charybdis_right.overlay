@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2020 ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+ 
+#include "charybdis_nano.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+	col-gpios
+		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+		;
+};
+
+// trackball bus
+&spi0 {
+	status = "okay"; //okay
+	sck-pin = <8>;
+	mosi-pin = <17>;
+	miso-pin = <17>; // same as mosi (3-wire spi)
+	cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+};
+
+&trackball {
+	status = "okay"; //okay
+	irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+};

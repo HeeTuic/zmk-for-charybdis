@@ -1,0 +1,28 @@
+if SHIELD_CHARYBDIS_NANO_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Charybdis"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
+
+config ZMK_SPLIT
+	default y
+	
+endif
+
+config MOUSE_LAYER_INDEX
+	int "Index of mouse layer"
+	default 4
+
+config SCROLL_LAYER_INDEX
+	int "Index of scroll layer"
+	default 5
+
+config MOUSE_LAYER_ACTIVE_MS
+	int "Amount of milliseconds the mouse layer will be active after using the trackball"
+	default 400
