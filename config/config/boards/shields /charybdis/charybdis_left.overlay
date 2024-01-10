@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "charybdis_nano.dtsi"
+#include "charybdis.dtsi"
 
 &kscan0 {
 	col-gpios
