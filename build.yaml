@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: charybdis_zmk_left
+    shield: charybdis_left
   - board: nice_nano_v2
-    shield: charybdis_zmk_right
+    shield: charybdis_right
   - board: nice_nano_v2
     shield: settings_reset
