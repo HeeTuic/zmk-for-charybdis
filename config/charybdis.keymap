@@ -21,6 +21,7 @@
                            &kp LGUI  &kp SPACE  &kp LALT     &kp ENTER  &kp BSPC
                                      &mkp RCLK  &mkp LCLK    &mkp MCLK
             >;
+            trackball-bindings = <&tmv_coarse>;
         };
     };
 };
