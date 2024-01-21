@@ -1,6 +1,5 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
@@ -15,11 +14,11 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5           &kp N6      &kp N7        &kp N8     &kp N9   &kp N0       &kp BSPC
-&kp TAB         &kp Q   &kp W   &kp E     &kp R         &kp T            &kp Y       &kp U         &kp I      &kp O    &kp P        &kp BSLH
-&kp LEFT_SHIFT  &kp A   &kp S   &kp D     &kp F         &kp G            &kp H       &kp J         &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LCTRL       &kp Z   &kp X   &kp C     &bt BT_SEL 0  &bt BT_CLR       &bt BT_CLR  &bt BT_SEL 0  &kp COMMA  &kp DOT  &lt 3 SLASH  &kp RSHFT
-                                &kp LGUI  &kp SPACE     &mo 1            &mo 2       &kp ENTER
+&kp ESC         &kp N1  &kp N2  &kp N3    &kp N4        &kp N5           &kp N6       &kp N7         &kp N8     &kp N9   &kp N0       &kp BSPC
+&kp TAB         &kp Q   &kp W   &kp E     &kp R         &kp T            &kp Y        &kp U          &kp I      &kp O    &kp P        &kp BACKSPACE
+&kp LCTRL       &kp A   &kp S   &kp D     &kp F         &kp G            &kp H        &kp J          &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V         &kp B            &kp N        &kp M          &kp COMMA  &kp DOT  &lt 3 SLASH  &kp ESC
+                                &kp LGUI  &kp SPACE     &lt 1 ENTER      &lt 2 ENTER  &kp BACKSPACE
                                           &kp LEFT_ALT  &kp BACKSPACE    &kp DEL
             >;
 
@@ -28,34 +27,34 @@
 
         layer_1 {
             bindings = <
-&kp TILDE  &kp EXCLAMATION  &kp HASH      &kp DOLLAR  &kp DOLLAR      &kp PERCENT    &kp CARET         &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&none      &none            &none         &none       &none           &none          &kp LEFT_BRACKET  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp RIGHT_BRACKET      &none
-&none      &kp LEFT_WIN     &kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &none          &kp PLUS          &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6          &kp MINUS              &kp EQUAL
-&none      &none            &none         &none       &none           &none          &kp ASTERISK      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3          &kp SLASH              &kp PERIOD
-                                          &none       &none           &trans         &none             &trans
-                                                      &none           &none          &kp NUMBER_0
+&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&kp TAB           &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &none          &kp GRAVE      &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp NON_US_BACKSLASH   &kp DEL
+&kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp PAGE_UP    &trans         &trans            &trans                &kp SEMICOLON          &kp SQT
+&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &kp PAGE_DOWN  &trans         &kp COMMA         &kp PERIOD            &kp SLASH              &kp ESC
+                                                 &kp LEFT_ALT  &mo 3         &trans         &none          &trans
+                                                               &none         &none          &kp NUMBER_0
             >;
         };
 
         layer_2 {
             bindings = <
-&kp F12     &kp F1    &kp F2        &kp F3          &kp F4           &kp F5    &kp F6  &kp F7      &kp F8     &kp F9         &kp F10        &kp F11
-&kp C_NEXT  &none     &none         &none           &none            &none     &none   &none       &none      &none          &none          &kp C_VOL_UP
-&kp C_PLAY  &kp LEFT  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none   &caps_word  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &kp K_MUTE
-&kp C_PREV  &none     &none         &none           &none            &none     &none   &none       &none      &none          &none          &kp C_VOL_DN
-                                    &trans          &trans           &none     &trans  &none
-                                                    &trans           &trans    &none
+&kp F12           &kp F1  &kp F2   &kp F3        &kp F4   &kp F5    &kp F6  &kp F7    &kp F8    &kp F9     &kp F10  &kp F11
+&kp TAB           &kp F1  &kp F2   &kp F3        &kp F4   &none     &none   &none     &kp UP    &none      &none    &kp DELETE
+&kp LEFT_CONTROL  &kp F5  &kp F6   &kp F7        &kp F8   &none     &none   &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&kp LEFT_SHIFT    &kp F9  &kp F10  &kp F11       &kp F12  &none     &none   &none     &none     &none      &none    &kp ESC
+                                   &kp LEFT_ALT  &trans   &none     &trans  &mo 3
+                                                 &trans   &trans    &none
             >;
         };
 
         Mouse {
             bindings = <
-&none        &none         &none         &none      &none           &none        &none      &none            &none      &none          &none          &none
-&none        &none         &none         &none      &none           &none        &none      &none            &none      &none          &none          &none
-&none        &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &none        &none      &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_WIN  &none
-&bootloader  &trans        &none         &none      &none           &none        &none      &none            &none      &none          &trans         &bootloader
-                                         &mkp RCLK  &mkp LCLK       &mkp MCLK    &mkp MCLK  &mkp LCLK
-                                                    &none           &mkp RCLK    &mkp RCLK
+&none        &none   &none   &none      &none      &none        &none      &none      &none      &none      &none   &none
+&none        &none   &none   &none      &none      &none        &none      &none      &none      &none      &none   &none
+&none        &trans  &trans  &trans     &trans     &none        &none      &trans     &trans     &trans     &trans  &none
+&bootloader  &trans  &none   &none      &none      &none        &none      &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &bootloader
+                             &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
+                                        &none      &trans       &trans
             >;
         };
     };
