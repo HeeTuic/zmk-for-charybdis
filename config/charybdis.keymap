@@ -45,6 +45,7 @@
                                    &kp LEFT_ALT  &trans   &none     &trans  &mo 3
                                                  &trans   &trans    &none
             >;
+             trackball-bindings = <&tsl>;
         };
 
         Mouse {
@@ -56,6 +57,7 @@
                              &mkp MCLK  &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                         &none      &trans       &trans
             >;
+            trackball-bindings = <&tmv_fine>;
         };
     };
 };
