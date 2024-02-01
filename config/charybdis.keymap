@@ -47,7 +47,7 @@
                                                  &trans     &trans       &none
             >;
 
-            trackball-bindings = <&tsl>;
+            
         };
 
         Mouse {
@@ -60,7 +60,7 @@
                                                        &none      &trans        &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            
         };
 
         layer_4 {
@@ -72,6 +72,8 @@
                            &mo 5      &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
+                trackball-bindings = <&tmv_fine>;
+
         };
 
         layer_5 {
@@ -83,6 +85,7 @@
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
+                trackball-bindings = <&tsl>;
         };
     };
 };
