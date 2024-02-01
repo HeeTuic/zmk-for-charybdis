@@ -68,12 +68,12 @@
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &mo 5        &mo 5      &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
-                           &mo 5      &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
+&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
+                           &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
-                trackball-bindings = <&tsl>;
-
+                
+                trackball-bindings = <&tmv_fine>;
         };
 
         layer_5 {
@@ -85,8 +85,8 @@
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
+                trackball-bindings = <&tsl>;
                 
-                trackball-bindings = <&tmv_fine>;
         };
     };
 };
