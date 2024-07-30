@@ -46,7 +46,7 @@
 &trans  &trans             &trans                &trans            &trans              &trans    &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &kp C_VOLUME_UP    &kp C_AC_SCROLL_DOWN  &kp HOME          &kp PAGE_UP         &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
 &trans  &kp C_VOLUME_DOWN  &kp C_AC_SCROLL_UP    &kp END           &kp PAGE_DOWN       &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp C_MUTE         &kp C_RW              &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &trans    &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &kp C_MUTE         &kp C_PREVIOUS        &kp C_PLAY_PAUSE  &kp C_FAST_FORWARD  &trans    &trans  &trans          &trans          &trans           &trans  &trans
                                                  &trans            &trans              &trans    &trans  &tog 3
                                                                    &trans              &trans    &trans
             >;
