@@ -79,7 +79,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;
+            trackball-bindings = <&tsl>;//滚轮层
         };
 
         layer_5 {
@@ -92,7 +92,7 @@
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tmv_fine>;//精准指针层
         };
     };
 };
