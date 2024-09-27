@@ -93,7 +93,6 @@
             bindings = <&mo 4>;
             key-positions = <13 22>;
             timeout-ms = <30>;
-            layers = <2>;
         };
 
         enter_combo {
@@ -200,38 +199,38 @@
 
         Base {
             bindings = <
-&none  &none  &none  &none  &none      &none    &none  &none  &none      &none       &none          &none
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y  &kp U  &kp I      &kp O       &kp P          &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &none
-                     &none  &kp SPACE  &mo 1    &mo 2  &none
-                            &none      &none    &none
+&none  &none       &none       &none         &none        &none        &none        &none            &none        &none       &none               &none
+&none  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y        &kp U            &kp I        &kp O       &kp P               &none
+&none  &mt LWIN A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H        &mt LSHFT J      &mt LCTRL K  &mt LALT L  &mt LWIN SEMICOLON  &none
+&none  &lt 2 Z     &kp X       &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA    &kp PERIOD  &lt 2 SLASH         &none
+                               &lt 3 ESCAPE  &lt 1 SPACE  &lt 5 TAB    &lt 2 ENTER  &lt 4 BACKSPACE
+                                             &none        &none        &none
             >;
 
             trackball-bindings = <&tmv_coarse>;
         };
 
-        NUM {
+        NAV {
             bindings = <
-&none  &none      &none          &none         &none         &none     &none   &none         &none         &none         &none         &none
-&none  &kp SLASH  &kp ASTERISK   &kp MINUS     &kp PLUS      &none     &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT   &none
-&none  &kp N0     &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &none     &none   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0  &none
-&none  &kp TILDE  &kp AMPERSAND  &kp CARET     &kp EQUAL     &none     &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &none
-                                 &trans        &trans        &trans    &trans  &trans
-                                               &none         &none     &none
+&none  &none     &none     &none      &none      &none     &none         &none          &none     &none         &none      &none
+&none  &none     &none     &none      &none      &none     &none         &none          &none     &none         &none      &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPSLOCK  &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none     &kp INS       &none          &none     &none         &none      &none
+                           &trans     &trans     &trans    &kp ENTER     &kp BACKSPACE
+                                      &none      &none     &none
             >;
 
             trackball-bindings = <&tmv_fine>;//精准指针
         };
 
-        NAV {
+        Mouse {
             bindings = <
-&none  &none           &none         &none           &none            &none                            &none   &none            &none           &none     &none               &none
-&none  &none           &none         &none           &none            &none                            &none   &kp BACKSLASH    &none           &none     &none               &none
-&none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt C_VOLUME_UP C_VOLUME_DOWN    &none   &kp DOLLAR       &kp UNDERSCORE  &kp SQT   &kp LA(LS(D))       &none
-&none  &kp HOME        &kp END       &kp PAGE_UP     &kp PAGE_DOWN    &none                            &none   &kp EXCLAMATION  &kp AT_SIGN     &kp HASH  &kp LC(LA(DELETE))  &none
-                                     &trans          &trans           &trans                           &trans  &trans
-                                                     &none            &none                            &none
+&none  &none   &none   &none   &none      &none        &none      &none      &none   &none   &none   &none
+&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
+&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
+                       &trans  &mkp LCLK  &mkp RCLK    &mkp LCLK  &mkp RCLK
+                               &none      &none        &none
             >;
         };
 
@@ -254,6 +253,28 @@
 &none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &bootloader  &none
                      &none  &none  &none    &none  &none
                             &none  &none    &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans
+                                &trans  &trans    &trans
             >;
         };
     };
