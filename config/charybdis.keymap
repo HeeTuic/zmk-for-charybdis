@@ -11,6 +11,11 @@
 
 &mt { flavor = "tap-preferred"; };
 
+&trackball {
+    automouse-layer = <2>;
+    automouse-layer-timeout-ms = <600>;
+};
+
 / {
     tdDel: DEL_BSPACE {
         compatible = "zmk,behavior-tap-dance";
@@ -225,12 +230,12 @@
 
         Mouse {
             bindings = <
-&none  &none   &none   &none   &none      &none        &none      &none      &none   &none   &none   &none
-&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
-&none  &trans  &trans  &trans  &trans     &trans       &trans     &trans     &trans  &trans  &trans  &none
-                       &trans  &mkp LCLK  &mkp RCLK    &mkp LCLK  &mkp RCLK
-                               &none      &none        &none
+&none  &none       &none       &none         &none        &none        &none        &none            &none        &none       &none               &none
+&none  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y        &kp U            &kp I        &kp O       &kp P               &none
+&none  &mt LWIN A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H        &mt LSHFT J      &mt LCTRL K  &mt LALT L  &mt LWIN SEMICOLON  &none
+&none  &lt 2 Z     &kp X       &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA    &kp PERIOD  &lt 2 SLASH         &none
+                   &trans      &mkp LCLK     &mkp RCLK    &mkp LCLK    &mkp RCLK
+                               &none         &none        &none
             >;
         };
 
