@@ -11,11 +11,6 @@
 
 &mt { flavor = "tap-preferred"; };
 
-&trackball {
-    automouse-layer = <2>;
-    automouse-layer-timeout-ms = <600>;
-};
-
 / {
     tdDel: DEL_BSPACE {
         compatible = "zmk,behavior-tap-dance";
