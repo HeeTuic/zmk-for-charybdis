@@ -200,8 +200,8 @@
         Base {
             bindings = <
 &none  &none       &none       &none         &none        &none        &none        &none            &none        &none       &none               &none
-&none  &mt LWIN Q  &mt LALT W  &mt LCTRL E   &mt LSHFT R  &kp T        &kp Y        &mt LSHFT U      &mt LCTRL I  &mt LALT O  &mt LWIN P          &none
-&none  &kp A       &kp S       &kp D         &kp F        &kp G        &kp H        &kp J            &kp K        &kp L       &kp SEMICOLON       &none
+&none  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y        &mt LSHFT U      &mt LCTRL I  &mt LALT O  &mt LWIN P          &none
+&none  &mt LWIN A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H        &kp J            &kp K        &kp L       &kp SEMICOLON       &none
 &none  &lt 2 Z     &kp X       &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA    &kp PERIOD  &lt 2 SLASH         &none
                                &lt 3 ESCAPE  &lt 1 SPACE  &lt 5 TAB    &lt 2 ENTER  &lt 4 BACKSPACE
                                              &none        &none        &none
