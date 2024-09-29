@@ -24,7 +24,7 @@
         compatible = "zmk,combos";
 
         bspc_combo {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp LANGUAGE_5>;
             key-positions = <31 32>;
             timeout-ms = <30>;
         };
@@ -199,11 +199,11 @@
 
         Base {
             bindings = <
-&none  &none       &none       &none         &none        &none        &none          &none          &none        &none       &none          &none
-&none  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y          &mt LSHFT U    &mt LCTRL I  &mt LALT O  &mt LWIN P     &none
-&none  &mt LWIN A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H          &kp J          &kp K        &kp L       &kp SEMICOLON  &none
-&none  &lt 2 Z     &kp X       &kp C         &kp V        &kp B        &kp N          &kp M          &kp COMMA    &kp PERIOD  &lt 2 SLASH    &none
-                               &lt 3 ESCAPE  &lt 1 SPACE  &lt 5 TAB    &kp BACKSPACE  &lt 4 ENTER  
+&none  &none       &none       &none         &none        &none        &none          &none        &none        &none       &none          &none
+&none  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y          &mt LSHFT U  &mt LCTRL I  &mt LALT O  &mt LWIN P     &none
+&none  &mt LWIN A  &mt LALT S  &mt LCTRL D   &mt LSHFT F  &kp G        &kp H          &kp J        &kp K        &kp L       &kp SEMICOLON  &none
+&none  &lt 2 Z     &kp X       &kp C         &kp V        &kp B        &kp N          &kp M        &kp COMMA    &kp PERIOD  &lt 2 SLASH    &none
+                               &lt 3 ESCAPE  &lt 1 SPACE  &lt 5 TAB    &kp BACKSPACE  &lt 4 ENTER
                                              &none        &none        &none
             >;
 
@@ -212,10 +212,10 @@
 
         NAV {
             bindings = <
-&none  &none     &none     &none      &none      &none     &none          &none          &none     &none         &none      &none
-&none  &none     &none     &none      &none      &none     &none          &none          &none     &none         &none      &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPSLOCK   &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
-&none  &none     &none     &none      &none      &none     &kp INS        &none          &none     &none         &none      &none
+&none  &none     &none     &none      &none      &none     &none          &none      &none     &none         &none      &none
+&none  &none     &none     &none      &none      &none     &none          &none      &none     &none         &none      &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPSLOCK   &kp LEFT   &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none     &kp INS        &none      &none     &none         &none      &none
                            &trans     &trans     &trans    &kp BACKSPACE  &kp ENTER
                                       &none      &none     &none
             >;
