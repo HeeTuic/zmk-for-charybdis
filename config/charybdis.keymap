@@ -9,7 +9,11 @@
     quick-tap-ms = <150>;
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt { 
+    tapping-term-ms = <200>;
+    flavor = "balanced";
+    quick-tap-ms = <150>;
+};
 
 / {
     tdDel: DEL_BSPACE {
