@@ -4,15 +4,15 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &lt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <300>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <250>;
 };
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = 300>;
     flavor = "balanced";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <250>;
 };
 
 / {
