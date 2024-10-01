@@ -67,10 +67,10 @@
 
         NAV {
             bindings = <
-&none  &none     &none     &none      &none      &none     &none          &none      &none         &none      &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPSLOCK   &none      &none         &none      &none  &none
-&none  &none     &none     &none      &none      &none     &kp LEFT       &kp DOWN   &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none     &none     &none      &none      &none     &kp INS        &none      &none         &none      &none  &none
+&none  &none     &none     &none      &none      &none     &none          &none             &none              &none          &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPSLOCK   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &none  &none
+&none  &none     &none     &none      &none      &none     &kp LEFT       &kp DOWN          &kp UP_ARROW       &kp RIGHT      &none  &none
+&none  &none     &none     &none      &none      &none     &kp INS        &kp SQT           &kp GRAVE          &none          &none  &none
                            &trans     &trans     &trans    &kp BACKSPACE  &kp ENTER
                                       &none      &none     &none
             >;
