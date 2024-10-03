@@ -47,13 +47,13 @@
 
         combo_mo_scroll {
             timeout-ms = <25>;
-            key-positions = <14 26>; // S, W
+            key-positions = <14 15>; // S, W
             bindings = <&tdl4>; //<&mo 4>;
         };
 
         combo_mo_tvm_fine {
             timeout-ms = <25>;
-            key-positions = <21 33>; // O, L
+            key-positions = <21 22>; // O, L
             bindings = <&tdl5>; //<&mo 5>;
         };
     };
