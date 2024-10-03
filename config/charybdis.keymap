@@ -59,6 +59,21 @@
     };
 
     behaviors {
+        tdl4: tap_dance_toggle_scroll {
+            label = "TD_TOGGLE_SCROLL";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <175>;
+            bindings = <&mo 4>, <&tog 4>;
+        };
+
+        tdl5: tap_dance_toggle_sniping {
+            label = "TD_TOGGLE_SNIPING";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <175>;
+            bindings = <&mo 5>, <&tog 5>;
+        };
     };
 
     keymap {
