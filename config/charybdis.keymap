@@ -32,12 +32,12 @@
 
         layer_0 {
             bindings = <
-&trans  &trans                 &trans            &trans               &trans               &trans         &trans           &trans                &trans                &trans            &trans                     &trans
-&trans  &kp Q                  &kp W             &kp E                &kp R                &kp T          &kp Y            &kp U                 &kp I                 &kp O             &kp P                      &trans
-&trans  &homerow LEFT_SHIFT A  &homerow LCTRL S  &homerow LEFT_ALT D  &homerow LEFT_WIN F  &kp G          &kp H            &homerow RIGHT_WIN J  &homerow RIGHT_ALT K  &homerow RCTRL L  &homerow RIGHT_SHIFT SEMI  &trans
-&trans  &kp Z                  &kp X             &kp C                &kp V                &kp B          &kp N            &kp M                 &kp COMMA             &kp DOT           &kp FSLH                   &trans
-                                                 &lt 3 ESC            &lt 2 TAB            &lt 1 SPACE    &lt 2 BACKSPACE  &lt 2 ENTER
-                                                                      &trans               &trans         &trans
+&trans  &trans                 &trans            &trans               &trans               &trans       &trans       &trans                &trans                &trans            &trans                     &trans
+&trans  &kp Q                  &kp W             &kp E                &kp R                &kp T        &kp Y        &kp U                 &kp I                 &kp O             &kp P                      &trans
+&trans  &homerow LEFT_SHIFT A  &homerow LCTRL S  &homerow LEFT_ALT D  &homerow LEFT_WIN F  &kp G        &kp H        &homerow RIGHT_WIN J  &homerow RIGHT_ALT K  &homerow RCTRL L  &homerow RIGHT_SHIFT SEMI  &trans
+&trans  &kp Z                  &kp X             &kp C                &kp V                &kp B        &kp N        &kp M                 &kp COMMA             &kp DOT           &kp FSLH                   &trans
+                                                 &lt 3 ESC            &lt 1 SPACE          &lt 2 TAB    &lt 3 ENTER  &lt 3 BACKSPACE
+                                                                      &trans               &trans       &trans
             >;
         };
 
@@ -57,7 +57,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans    &trans             &trans        &trans        &trans        &trans      &trans
 &trans  &trans  &trans     &trans     &trans     &trans    &trans             &trans        &trans        &trans        &trans      &trans
 &trans  &trans  &mkp MCLK  &mkp LCLK  &mkp LCLK  &trans    &trans             &trans        &trans        &trans        &trans      &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &ext_power EP_OFF  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &ext_power EP_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &trans
                            &trans     &trans     &trans    &trans             &trans
                                       &trans     &trans    &trans
             >;
