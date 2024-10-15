@@ -40,11 +40,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans  &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp LS(EXCL)  &kp LBKT      &kp RBKT      &trans        &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp EQUAL     &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(PLUS)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(PLUS)  &kp LS(LBRC)  &kp LS(RBRC)  &kp MINUS     &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans
                                 &trans  &trans    &trans
             >;
         };
