@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+    #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -51,6 +51,8 @@
                                  &mo 3    &mo 1              &mo 2       &kp ENTER        &kp BACKSPACE
                                           &trans             &trans      &trans
             >;
+
+            trackball-bindings = <&tsl>;//滚轮层
         };
 
         layer_2 {
@@ -63,7 +65,7 @@
                                               &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
+            trackball-bindings = <&tmv_fine>;//精准指针层
         };
 
         layer_3 {
