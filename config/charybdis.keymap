@@ -65,7 +65,7 @@
                                               &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
+            trackball-bindings = <&tmv_coarse>;
         };
 
         layer_3 {
