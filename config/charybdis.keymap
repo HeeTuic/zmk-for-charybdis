@@ -31,12 +31,12 @@
 
         BASE {
             bindings = <
-&mkp RCLK  &kp N1  &kp N2  &kp N3     &kp N4       &kp N5       &kp N6   &kp N7    &kp N8     &kp N9   &kp N0    &kp RBKT
-&kp ESC    &kp Q   &kp W   &kp E      &kp R        &kp T        &kp Y    &kp U     &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB    &kp A   &kp S   &kp D      &kp F        &kp G        &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z   &kp X   &kp C      &kp V        &kp B        &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BSLH
-                           &kp LSHFT  &lt 2 SPACE  &mkp LCLK    &kp RET  &kp BSPC
-                                      &kp LGUI     &kp LALT     &kp DEL
+&mkp MCLK     &kp N1  &kp N2                   &kp N3     &kp N4       &kp N5          &kp N6   &kp N7    &kp N8     &kp N9                    &kp N0    &kp RBKT
+&kp ESC       &kp Q   &kp W                    &kp E      &kp R        &kp T           &kp Y    &kp U     &kp I      &kp O                     &kp P     &kp LBKT
+&kp TAB       &kp A   &homerow LEFT_CONTROL S  &kp D      &kp F        &kp G           &kp H    &kp J     &kp K      &homerow L RIGHT_CONTROL  &kp SEMI  &kp SQT
+&kp LEFT_WIN  &kp Z   &kp X                    &kp C      &kp V        &kp B           &kp N    &kp M     &kp COMMA  &kp DOT                   &kp FSLH  &kp BSLH
+                                               &kp LSHFT  &lt 2 SPACE  &mkp LCLK       &kp RET  &kp BSPC
+                                                          &mkp RCLK    &kp LEFT_ALT    &kp DEL
             >;
         };
 
