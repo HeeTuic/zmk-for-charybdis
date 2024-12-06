@@ -31,10 +31,10 @@
 
         BASE {
             bindings = <
-&mkp MCLK     &kp N1  &kp N2                   &kp N3     &kp N4       &kp N5       &kp N6   &kp N7    &kp N8     &kp N9            &kp N0    &kp RBKT
+&mkp MCLK     &kp N1  &kp N2                   &kp N3     &kp N4       &kp N5       &kp N6   &kp N7    &kp N8     &kp N9            &kp N0    &kp PIPE
 &kp ESC       &kp Q   &kp W                    &kp E      &kp R        &kp T        &kp Y    &kp U     &kp I      &kp O             &kp P     &kp LBKT
 &kp LEFT_ALT  &kp A   &homerow LEFT_CONTROL S  &kp D      &kp F        &kp G        &kp H    &kp J     &kp K      &homerow RCTRL L  &kp SEMI  &kp SQT
-&kp LEFT_WIN  &kp Z   &kp X                    &kp C      &kp V        &kp B        &kp N    &kp M     &kp COMMA  &kp DOT           &kp FSLH  &kp BSLH
+&kp LEFT_WIN  &kp Z   &kp X                    &kp C      &kp V        &kp B        &kp N    &kp M     &kp COMMA  &kp DOT           &kp FSLH  &kp RIGHT_BRACKET
                                                &kp LSHFT  &lt 2 SPACE  &mkp LCLK    &kp RET  &kp BSPC
                                                           &kp TAB      &mkp RCLK    &kp DEL
             >;
