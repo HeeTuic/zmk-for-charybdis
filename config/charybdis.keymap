@@ -54,7 +54,7 @@
         SYMNUM {
             bindings = <
 &kp F1            &kp F2         &kp F3          &kp F4          &kp F5           &kp F6             &kp F7           &kp F8                &kp F9                 &kp F10       &kp F11        &kp F12
-&kp ESC           &kp PAGE_DOWN  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP        &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp AMPERSAND  &kp AT
+&kp PRINTSCREEN   &kp PAGE_DOWN  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP        &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp AMPERSAND  &kp AT
 &kp LS(LEFT_ALT)  &kp C_VOL_DN   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_UP    &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp PERCENT    &kp HASH
 &kp LC(LEFT_WIN)  &bt BT_CLR     &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0     &sys_reset         &kp UNDERSCORE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS     &kp SLASH      &kp DOLLAR
                                                  &trans          &mo 2            &trans             &kp ENTER        &kp BSPC
