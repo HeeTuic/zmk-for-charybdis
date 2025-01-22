@@ -25,10 +25,10 @@
 
         layer_0 {
             bindings = <
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5              &kp NUMBER_6  &kp N7         &kp NUMBER_8  &kp N9     &kp NUMBER_0  &kp C_AC_CLOSE
-&kp ESCAPE      &kp Q         &kp W         &kp E         &kp R         &kp T               &kp Y         &kp U          &kp I         &kp O      &kp P         &kp F2
-&kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G               &kp H         &kp J          &kp K         &kp L      &kp UP_ARROW  &kp PAGE_UP
-&kp LEFT_ALT    &kp Z         &kp X         &kp C         &kp V         &kp B               &kp N         &kp M          &kp LEFT      &kp RIGHT  &kp DOWN      &kp PAGE_DOWN
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5              &kp NUMBER_6  &kp N7         &kp NUMBER_8  &kp N9     &kp C_AC_OPEN  &kp C_AC_CLOSE
+&kp ESCAPE      &kp Q         &kp W         &kp E         &kp R         &kp T               &kp Y         &kp U          &kp I         &kp O      &kp P          &kp F2
+&kp CAPS        &kp A         &kp S         &kp D         &kp F         &kp G               &kp H         &kp J          &kp K         &kp L      &kp UP_ARROW   &kp PAGE_UP
+&kp LEFT_ALT    &kp Z         &kp X         &kp C         &kp V         &kp B               &kp N         &kp M          &kp LEFT      &kp RIGHT  &kp DOWN       &kp PAGE_DOWN
                                             &kp SPACE     &to 1         &kp LEFT_CONTROL    &kp DEL       &kp BACKSPACE
                                                           &mkp LCLK     &mkp RCLK           &kp ENTER
             >;
