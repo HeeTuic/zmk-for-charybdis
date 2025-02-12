@@ -54,12 +54,12 @@
 
         SYMNUM {
             bindings = <
-&kp F1            &kp F2      &kp F3     &kp F4        &kp F5          &kp F6        &kp F7           &kp F8                &kp F9                 &kp F10       &kp F11        &kp F12
-&kp PRINTSCREEN   &kp N6      &kp N7     &kp N8        &kp N9          &kp N0        &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp AMPERSAND  &kp AT
-&kp LS(LEFT_ALT)  &kp N1      &kp N2     &kp N3        &kp N4          &kp N5        &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp PERCENT    &kp HASH
-&kp LC(LEFT_WIN)  &kp DOLLAR  &kp CARET  &bt BT_SEL 1  &bt BT_SEL 0    &sys_reset    &kp UNDERSCORE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS     &kp SLASH      &kp PIPE
-                                         &trans        &mo 2           &trans        &kp ENTER        &kp BSPC
-                                                       &kp LEFT_SHIFT  &trans        &kp DEL
+&kp F1            &kp F2      &kp F3     &kp F4        &kp F5          &kp F6            &kp F7           &kp F8                &kp F9                 &kp F10       &kp F11        &kp F12
+&kp PRINTSCREEN   &kp N6      &kp N7     &kp N8        &kp N9          &kp N0            &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp AMPERSAND  &kp AT
+&kp LS(LEFT_ALT)  &kp N1      &kp N2     &kp N3        &kp N4          &kp N5            &kp EQUAL        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS      &kp PERCENT    &kp HASH
+&kp LC(LEFT_WIN)  &kp DOLLAR  &kp CARET  &kp CAPSLOCK  &kp SCROLLLOCK  &kp KP_NUMLOCK    &kp UNDERSCORE   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS     &kp SLASH      &kp PIPE
+                                         &trans        &mo 2           &trans            &kp ENTER        &kp BSPC
+                                                       &kp LEFT_SHIFT  &trans            &kp DEL
             >;
         };
     };
