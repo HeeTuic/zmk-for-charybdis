@@ -47,11 +47,11 @@
 
         BASE {
             bindings = <
-&kp F1        &kp F2  &kp F3            &kp F4  &kp F5                 &kp F6       &kp F7   &kp F8                  &kp F9     &kp F10           &kp F11   &kp F12
-&kp ESC       &kp Q   &kp W             &kp E   &kp R                  &kp T        &kp Y    &kp U                   &kp I      &kp O             &kp P     &kp LBKT
-&kp TAB       &kp A   &homerow LCTRL S  &kp D   &homerow LEFT_SHIFT F  &kp G        &kp H    &homerow RIGHT_SHIFT J  &kp K      &homerow RCTRL L  &kp SEMI  &kp SQT
-&kp LEFT_WIN  &kp Z   &kp X             &kp C   &kp V                  &kp B        &kp N    &kp M                   &kp COMMA  &kp DOT           &kp FSLH  &kp RIGHT_BRACKET
-                                        &mo 1   &lt 2 SPACE            &mkp LCLK    &kp RET  &kp BSPC
+&kp F1        &kp F2  &kp F3            &kp F4  &kp F5                 &kp F6       &kp F7   &kp F8                       &kp F9     &kp F10           &kp F11   &kp F12
+&kp ESC       &kp Q   &kp W             &kp E   &kp R                  &kp T        &kp Y    &kp U                        &kp I      &kp O             &kp P     &kp LBKT
+&kp TAB       &kp A   &homerow LCTRL S  &kp D   &homerow LEFT_SHIFT F  &kp G        &kp H    &homerow RIGHT_SHIFT J       &kp K      &homerow RCTRL L  &kp SEMI  &kp SQT
+&kp LEFT_WIN  &kp Z   &kp X             &kp C   &kp V                  &kp B        &kp N    &kp M                        &kp COMMA  &kp DOT           &kp FSLH  &kp RIGHT_BRACKET
+                                        &mo 1   &lt 2 SPACE            &mkp LCLK    &kp RET  &homerow LC(BSPC) BACKSPACE
                                                 &kp LEFT_ALT           &mkp RCLK    &kp DEL
             >;
         };
