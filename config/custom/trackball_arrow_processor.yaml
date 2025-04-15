@@ -1,8 +1,6 @@
-# trackball_arrow_processor.yaml
-description: Custom input processor that maps trackball movement to arrow key presses
+description: Custom processor for PMW3610 to emit arrow key presses
 compatible: "custom,trackball-arrow-processor"
-include: 
-  - input-processor-base.yaml
+include: ["input-processor-base.yaml"]
 
 properties:
   "#input-processor-cells":
