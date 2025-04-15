@@ -1,7 +1,0 @@
-description: Custom processor for PMW3610 to emit arrow key presses
-compatible: "custom,trackball-arrow-processor"
-include: ["input-processor-base.yaml"]
-
-properties:
-  "#input-processor-cells":
-    const: 0
