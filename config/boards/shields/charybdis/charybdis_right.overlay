@@ -62,9 +62,39 @@
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
+    // ... інші налаштування ...
 
-  };
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        // Прив'язуємо цей слухач до нашого сенсора трекболу (назва &trackball повинна відповідати вашому визначенню сенсора PMW3610)
+        device = <&trackball>;
+
+        // Базові процесори за замовчуванням (необов'язково явно вказувати, якщо курсор рухається стандартно)
+        input-processors = <&zip_xy_transform>; // приклад: можна додати базову трансформацію, або лишити порожнім
+
+        // Override для шару 1: перетворення руху на стрілки
+        arrows_layer_override: arrows_layer_override {
+            layers = <1>;
+            input-processors = <&trackball_arrow_processor>;
+            process-next = <false>;  // зупинити подальшу обробку, щоб курсор не рухався
+        };
+
+        // Override для шару 2: використання трекболу як скрол
+        scroll_layer_override: scroll_layer_override {
+            layers = <2>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+            process-next = <false>;  // не рухати курсор, тільки скрол
+        };
+    };
+
+    // Вузол визначення наших користувацьких процесорів вводу
+    input_processors {
+        // Процесор для стрілок з трекболу (власний драйвер)
+        trackball_arrow_processor: trackball_arrow_processor {
+            compatible = "custom,trackball-arrow-processor";
+            #input-processor-cells = <0>;
+            // (Ніяких додаткових властивостей не треба, логіка прописана в коді драйвера)
+        };
+    };
 };
+
