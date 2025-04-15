@@ -65,20 +65,6 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-
-    arrows_layer_override: arrows_layer_override {
-      layers = <1>;
-      input-processors = <&trackball_arrow_processor>;
-      process-next = <false>;
-    };
-  };
-
-  input_processors {
-    trackball_arrow_processor: trackball_arrow_processor {
-      compatible = "custom,trackball-arrow-processor";
-      #input-processor-cells = <0>;
-    };
-  };
 };
 
 
