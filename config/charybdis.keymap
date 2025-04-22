@@ -28,6 +28,7 @@
             compatible = "zmk,behavior-trackball-arrows";
             #sensor-binding-cells = <0>;
             sensor = <&trackball>;
+            bindings = <>;
         };
     };
 
