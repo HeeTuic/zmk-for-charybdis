@@ -41,8 +41,7 @@
             tapping-term-ms = <150>;
             bindings =
                 <&kp BACKSPACE>,
-                <&kp LC(BACKSPACE)>,
-                <&kp LC(LS(BACKSPACE))>;
+                <&kp LC(BACKSPACE)>;
         };
     };
 
