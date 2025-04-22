@@ -34,8 +34,6 @@
             tapping-term-ms = <150>;
         };
 
-        dtp dtp
-
         backspace: dtp_backspace {
             compatible = "zmk,behavior-tap-dance";
             label = "DTP BACKSPACE";
