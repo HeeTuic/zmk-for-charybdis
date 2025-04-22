@@ -2,5 +2,5 @@ description: Trackball-to-arrow behavior
 compatible: "zmk,behavior-trackball-arrows"
 include: zero_param.yaml
 
-#sensor-binding-cells:
+sensor-binding-cells:
   const: 0
