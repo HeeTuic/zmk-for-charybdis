@@ -1,8 +1,0 @@
-# zmk,behavior-trackball-arrows.yaml
-description: Trackball Arrows behavior
-compatible: "zmk,behavior-trackball-arrows"
-include: zero_param.yaml
-
-properties:
-  "#sensor-binding-cells":
-    const: 0
