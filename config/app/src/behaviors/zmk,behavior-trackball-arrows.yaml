@@ -1,6 +1,11 @@
+# Copyright (c) 2024 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
 description: Trackball-to-arrow behavior
+
 compatible: "zmk,behavior-trackball-arrows"
 include: zero_param.yaml
 
-sensor-binding-cells:
-  const: 0
+properties:
+  "#sensor-binding-cells":
+    const: 0
