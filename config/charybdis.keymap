@@ -23,15 +23,6 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
         };
-
-     #ifdef CONFIG_SHIELD_CHARYBDIS_RIGHT
-        trackball_arrows: trackball_arrows {
-            compatible = "zmk,behavior-trackball-arrows";
-            #sensor-binding-cells = <0>;
-            sensor = <&trackball>;
-            bindings = <>;
-        };
-        #endif
     };
 
 
@@ -58,9 +49,6 @@
                                  &trans    &trans     &trans             &trans        &trans
                                            &trans     &trans             &trans
             >;
-                #ifdef CONFIG_SHIELD_CHARYBDIS_RIGHT
-                sensor-bindings = <&trackball_arrows>;
-                #endif
         };
 
         SYMNUM {
