@@ -26,6 +26,7 @@
 
         trackball_arrows: trackball_arrows {
             compatible = "zmk,behavior-trackball-arrows";
+            #sensor-binding-cells = <0>;
         };
     };
 
