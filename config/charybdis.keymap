@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -25,7 +26,7 @@
             flavor = "tap-preferred";
         };
 
-        dtp: dtp_DEL {
+        del: dtp_DEL {
             compatible = "zmk,behavior-tap-dance";
             label = "DTP DEL";
             #binding-cells = <0>;
@@ -57,8 +58,8 @@
 &kp ESC       &kp Q   &kp W                    &kp E   &kp R                  &kp T        &kp Y     &kp U                   &kp I      &kp O             &kp P     &kp LBKT
 &kp TAB       &kp A   &homerow LEFT_CONTROL S  &kp D   &homerow LEFT_SHIFT F  &kp G        &kp H     &homerow RIGHT_SHIFT J  &kp K      &homerow RCTRL L  &kp SEMI  &kp SQT
 &kp LEFT_WIN  &kp Z   &kp X                    &kp C   &kp V                  &kp B        &kp N     &kp M                   &kp COMMA  &kp DOT           &kp FSLH  &kp RIGHT_BRACKET
-                                               &mo 1   &lt 2 SPACE            &mkp LCLK    &kp RET   &dtp backspace
-                                                       &kp LALT               &mkp RCLK    &dtp DEL
+                                               &mo 1   &lt 2 SPACE            &mkp LCLK    &kp RET   &backspace
+                                                       &kp LALT               &mkp RCLK    &del DEL
             >;
         };
 
