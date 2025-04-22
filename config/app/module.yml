@@ -1,3 +1,0 @@
-name: behavior_trackball_arrows
-bindings:
-  - file: behaviors/zmk,behavior-trackball-arrows.yaml
