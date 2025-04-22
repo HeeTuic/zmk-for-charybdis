@@ -1,3 +1,6 @@
-description: Trackball to arrow key behavior
+description: Trackball-to-arrow behavior
 compatible: "zmk,behavior-trackball-arrows"
-include: "behavior-base.yaml"
+include: zero_param.yaml
+
+#sensor-binding-cells:
+  const: 0
