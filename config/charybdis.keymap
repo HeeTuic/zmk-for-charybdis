@@ -2,13 +2,14 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
         compatible = "zmk,combos";
 
         ckp {
-            bindings = <&kp LG(SPACE)>;
+            bindings = <&mkp MCLK>;
             key-positions = <54 50>;
             layers = <0>;
         };
