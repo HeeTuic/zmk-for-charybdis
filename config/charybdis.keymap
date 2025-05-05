@@ -41,7 +41,6 @@
                         &kp LSHFT  &kp SPACE       &tog 4            &lt 2 ENTER     &kp BSPC
                                         &trans     &trans            &trans
             >;
-
             trackball-bindings = <&tmv_coarse>;
         };
 
