@@ -38,8 +38,8 @@
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE       &tog 4            &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -51,8 +51,8 @@
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
         };
 
@@ -62,8 +62,8 @@
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
         };
 
@@ -73,35 +73,33 @@
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
         };
 
-        layer_4 {
+        mouse_layer {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE       &to 1             &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
-
-            trackball-bindings = <&tsl>;//滚轮层
         };
 
-        layer_5 {
+        scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN    &lt 2 ENTER     &kp RIGHT_ARROW
-                                        &trans     &kp SPACE         &kp DOWN_ARROW
+                        &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
+                                        &trans     &trans            &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;
+            trackball-bindings = <&tsl>;
         };
     };
 };
