@@ -29,6 +29,7 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+            label = "holdtap";
         };
     };
     conditional_layers {
@@ -47,7 +48,7 @@
 &trans  &kp Q        &kp W       &kp F         &kp P       &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMI       &trans
 &trans  &ht LCTRL A  &ht LALT R  &ht LGUI S    &ht LSHFT T &ht TAB G         &ht TAB M       &ht LSHFT N      &ht LGUI E &ht LALT I  &ht LCTRL O    &trans
 &trans  &kp Z        &kp X       &kp C         &kp D       &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                        &kp LSHFT  &kp SPACE       &tog 4                    &lt 2 ENTER     &kp BSPC
+                     &kp LSHFT   &kp SPACE     &tog 4                        &lt 2 ENTER     &kp BSPC
                                         &trans     &trans                    &trans
             >;
             trackball-bindings = <&tmv_coarse>;
