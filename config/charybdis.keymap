@@ -100,8 +100,8 @@
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &to 0           &trans           &trans     &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &to 4       &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &to 4            &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
