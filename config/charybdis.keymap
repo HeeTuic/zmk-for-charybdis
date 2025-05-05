@@ -27,7 +27,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
             label = "holdtap";
         };
@@ -56,10 +55,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans     &trans     &trans        &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Q      &kp W      &kp F         &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp TAB    &kp GRAVE  &kp C_PREV    &kp C_PP   &kp C_NEXT        &kp M           &kp N            &kp E      &kp I       &kp O          &trans
-&trans  &kp Z      &kp X      &kp C         &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+&trans  &trans     &trans     &trans        &trans     &trans        &trans      &trans     &trans     &trans      &trans         &trans
+&trans  &kp Q      &kp W      &kp F         &kp P      &kp B         &kp J       &kp L      &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp TAB    &kp GRAVE  &kp C_PREV    &kp C_PP   &kp C_NEXT    &kp SQT     &kp LARW   &kp DARW   &kp UARW    &kp RARW       &trans
+&trans  &caps_word &trans     &trans        &trans     &kp LALT	     &trans      &kp HOME   &kp PG_DN  &kp PG_UP   &kp END        &trans
                         &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
                                         &trans     &trans            &trans
             >;
