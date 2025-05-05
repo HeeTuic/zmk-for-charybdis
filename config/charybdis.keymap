@@ -110,10 +110,10 @@
         game_layer {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 0          &trans
-&trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Z   &kp X   &kp C           &kp V      &kp CTRL          &trans          &trans           &trans     &trans      &trans         &trans
-                        &kp LSHFT       &kp SPACE  &tog 8            &trans          &trans
+&trans  &kp ESC &kp N1  &kp N2          &kp N3     &kp N4            &trans          &trans           &trans     &trans      &to 0          &trans
+&trans  &kp TAB &kp N5  &kp N6          &kp N7     &kp N8            &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &trans  &kp N9  &kp N0          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
+                        &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
             trackball-bindings = <&tsl>;
@@ -121,7 +121,7 @@
         game_layer2 {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp ESC &kp N1  &kp N2          &kp N3     &kp N4            &trans          &trans           &trans     &trans      &to 7          &trans
+&trans  &kp ESC &kp N1  &kp N2          &kp N3     &kp N4            &trans          &trans           &trans     &trans      &to 0          &trans
 &trans  &kp TAB &kp N5  &kp N6          &kp N7     &kp N8            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &trans  &kp N9  &kp N0          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
