@@ -112,7 +112,7 @@
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 0          &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Z   &kp X   &kp C           &kp D      &kp CTRL          &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &kp Z   &kp X   &kp C           &kp D      &kp LCTRL          &trans          &trans           &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
