@@ -106,17 +106,7 @@
                                         &trans     &trans            &trans
             >;
 
-        game_layer {
-            bindings = <
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 7          &trans
-&trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Z   &kp X   &kp C           &kp V      &kp CTRL          &trans          &trans           &trans     &trans      &trans &trans
-                        &kp LSHFT       &kp SPACE  &lt 8 SPACE       &trans          &trans
-                                        &trans     &trans            &trans
-            >;
-            trackball-bindings = <&tsl>;
-        };
+
         game_layer2 {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
