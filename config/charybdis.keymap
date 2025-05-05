@@ -20,7 +20,6 @@
             layers = <0>;
         };
     };
-
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -39,7 +38,6 @@
             then-layer = <3>;
         };
     };
-
     keymap {
         compatible = "zmk,keymap";
 
