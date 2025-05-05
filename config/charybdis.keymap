@@ -111,8 +111,8 @@
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 0          &trans
-&trans  &kp TAB &kp N5  &kp N6          &kp N7     &kp N8            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &trans  &kp N9  &kp N0          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &kp Z   &kp X   &kp C           &kp D      &kp CTRL          &trans          &trans           &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
