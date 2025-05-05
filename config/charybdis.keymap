@@ -48,7 +48,7 @@
 &trans  &kp Q        &kp W       &kp F         &kp P       &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMI       &trans
 &trans  &ht LCTRL A  &ht LALT R  &ht LGUI S    &ht LSHFT T &ht TAB G         &ht TAB M       &ht LSHFT N      &ht LGUI E &ht LALT I  &ht LCTRL O    &trans
 &trans  &kp Z        &kp X       &kp C         &kp D       &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                     &kp LSHFT   &kp SPACE     &tog 4                        &lt 2 ENTER     &kp BSPC
+                     &kp LSHFT   &kp SPACE     &tog 4                        &lt 2 ENTER     &lt 1 BSPC
                                         &trans     &trans                    &trans
             >;
             trackball-bindings = <&tmv_coarse>;
@@ -56,10 +56,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &kp Q   &kp W   &kp F           &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
-&trans  &kp A   &kp S   &kp D           &kp F      &kp G             &kp M           &kp N            &kp E      &kp I       &kp O          &trans
-&trans  &kp Z   &kp X   &kp C           &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
+&trans  &trans     &trans     &trans        &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
+&trans  &kp Q      &kp W      &kp F         &kp P      &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMICOLON  &trans
+&trans  &kp TAB    &kp GRAVE  &kp C_PREV    &kp C_PP   &kp C_NEXT        &kp M           &kp N            &kp E      &kp I       &kp O          &trans
+&trans  &kp Z      &kp X      &kp C         &kp D      &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
                         &kp LSHFT  &kp SPACE  &lt 1 LEFT_WIN         &lt 2 ENTER     &kp BSPC
                                         &trans     &trans            &trans
             >;
