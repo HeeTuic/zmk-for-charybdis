@@ -54,7 +54,7 @@
 &trans  &kp Q        &kp W       &kp F         &kp P       &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMI       &trans
 &trans  &ht LCTRL A  &ht LALT R  &ht LGUI S    &ht LSHFT T &ht TAB G         &ht TAB M       &ht LSHFT N      &ht LGUI E &ht LALT I  &ht LCTRL O    &trans
 &trans  &kp Z        &kp X       &kp C         &kp D       &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                     &kp LSHFT   &kp SPACE     &mo_tog 4 4                        &lt 2 ENTER     &lt 1 BSPC
+                     &kp LSHFT   &kp SPACE     &mo_tog 4 4                   &lt 2 ENTER     &lt 1 BSPC
                                         &trans     &trans                    &trans
             >;
             trackball-bindings = <&tmv_coarse>;
@@ -98,7 +98,7 @@
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &trans         &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &to 7          &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK      &mo_tog 5 5 &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &msc MOVE_DOWN   &msc MOVE_UP   &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &msc SCRL_DOWN   &msc SCRL_UP   &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
