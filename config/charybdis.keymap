@@ -98,7 +98,7 @@
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &trans         &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &to 7          &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK      &mo_tog 5 5 &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &msc SCRL_DOWN   &msc SCRL_UP   &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &kp PG_DN        &kp PG_UP      &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
