@@ -95,10 +95,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans       &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &to 0           &trans           &trans     &trans      &to 7          &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &to 5            &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &to 7          &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK      &mo_tog 5 5 &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &msc MOVE_DOWN   &msc MOVE_UP   &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
@@ -107,9 +107,9 @@
         scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &to 0           &trans           &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &to 4            &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
