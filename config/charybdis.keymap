@@ -121,7 +121,7 @@
 &trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 0          &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp LCTRL          &trans          &trans           &trans     &trans      &trans         &trans
-                        &kp LSHFT          &kp SPACE     &to 7            &trans          &trans
+                        &kp LSHFT       &kp SPACE  &mo_tog 7 7            &trans          &trans
                                         &trans     &trans            &trans
             >;
             trackball-bindings = <&tsl>;
