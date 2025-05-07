@@ -29,6 +29,14 @@
             bindings = <&kp>, <&kp>;
             label = "holdtap";
         };
+        mo_tog: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
+            label = "modtog";
+        };
     };
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -46,7 +54,7 @@
 &trans  &kp Q        &kp W       &kp F         &kp P       &kp B             &kp J           &kp L            &kp U      &kp Y       &kp SEMI       &trans
 &trans  &ht LCTRL A  &ht LALT R  &ht LGUI S    &ht LSHFT T &ht TAB G         &ht TAB M       &ht LSHFT N      &ht LGUI E &ht LALT I  &ht LCTRL O    &trans
 &trans  &kp Z        &kp X       &kp C         &kp D       &kp V             &kp K           &kp H            &kp COMMA  &kp PERIOD  &kp SLASH      &trans
-                     &kp LSHFT   &kp SPACE     &tog 4                        &lt 2 ENTER     &lt 1 BSPC
+                     &kp LSHFT   &kp SPACE     &mo_tog 4 4                   &lt 2 ENTER     &lt 1 BSPC
                                         &trans     &trans                    &trans
             >;
             trackball-bindings = <&tmv_coarse>;
@@ -87,10 +95,10 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans       &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &to 0           &trans           &trans     &trans      &to 7          &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &to 5            &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans         &trans      &to 6          &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK      &mo_tog 5 5 &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &kp PG_DN        &kp PG_UP      &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
@@ -99,9 +107,9 @@
         scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &to 0           &trans           &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &trans  &trans  &trans          &trans     &trans            &mkp MCLK       &mkp LCLK        &mkp RCLK  &trans      &trans         &trans
-&trans  &trans  &trans  &trans          &trans     &trans            &trans          &to 4            &trans     &trans      &trans         &trans
+&trans  &trans  &trans  &trans          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
                         &trans          &trans     &trans            &trans          &trans
                                         &trans     &trans            &trans
             >;
@@ -113,7 +121,7 @@
 &trans  &kp Q   &kp W   &kp E           &kp R      &kp T             &trans          &trans           &trans     &trans      &to 0          &trans
 &trans  &kp A   &kp S   &kp D           &kp F      &kp G             &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &kp Z   &kp X   &kp C           &kp D      &kp LCTRL          &trans          &trans           &trans     &trans      &trans         &trans
-                        &kp LSHFT          &kp SPACE     &to 8            &trans          &trans
+                        &kp LSHFT       &kp SPACE  &mo_tog 7 7            &trans          &trans
                                         &trans     &trans            &trans
             >;
             trackball-bindings = <&tsl>;
@@ -124,7 +132,7 @@
 &trans  &kp ESC &kp N1  &kp N2          &kp N3     &kp N4            &trans          &trans           &trans     &trans      &to 0          &trans
 &trans  &kp TAB &kp N5  &kp N6          &kp N7     &kp N8            &trans          &trans           &trans     &trans      &trans         &trans
 &trans  &trans  &kp N9  &kp N0          &trans     &trans            &trans          &trans           &trans     &trans      &trans         &trans
-                        &trans          &trans     &to 7            &trans          &trans
+                        &trans          &trans     &to 6            &trans          &trans
                                         &trans     &trans            &trans
             >;
             trackball-bindings = <&tsl>;
