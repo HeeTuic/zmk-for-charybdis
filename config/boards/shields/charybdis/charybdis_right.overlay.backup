@@ -24,17 +24,17 @@
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 31)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 29)>,
+                <NRF_PSEL(SPIM_MISO, 0, 29)>;
         };
     };
 
     spi0_sleep: spi0_sleep {
         group1 {
-            psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+            psels = <NRF_PSEL(SPIM_SCK, 0, 31)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 29)>,
+                <NRF_PSEL(SPIM_MISO, 0, 29)>;
             low-power-enable;
         };
     };
@@ -46,14 +46,14 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        irq-gpios = <&gpio0 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
          /*   optional features   */
         scroll-layers = <2>;
         caret-layers = <1>;

@@ -6,12 +6,6 @@
 
 #include "charybdis.dtsi"
 
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
-
 &kscan0 {
 	col-gpios
 		= <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -21,43 +15,4 @@
 		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		, <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 		;
-};
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-                <NRF_PSEL(TWIM_SCL, 0, 24)>;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-                <NRF_PSEL(TWIM_SCL, 0, 24)>;
-            low-power-enable;
-        };
-    };
-};
-
-&i2c0 {
-    status = "okay";
-    compatible = "nordic,nrf-twim";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        com-sequential;
-        prechargep = <0x22>;
-        inversion-on;
-    };
 };
