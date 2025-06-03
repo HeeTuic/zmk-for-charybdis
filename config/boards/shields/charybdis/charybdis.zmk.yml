@@ -8,6 +8,7 @@ features:
   - keys
   - pointer
   - underglow
+  - display
 siblings:
   - charybdis_left
   - charybdis_right
