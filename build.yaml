@@ -10,9 +10,9 @@
 
 # Якщо потрібна додаткова кастомізація або майбутнє розширення, залиште include:
 include:
-  - board: nice_nano_v2
-    shield: charybdis_left nice_oled
-  - board: nice_nano_v2
     shield: charybdis_right nice_oled
   - board: nice_nano_v2
     shield: settings_reset
+  - board: nice_nano_v2
+    shield: charybdis_left nice_oled
+  - board: nice_nano_v2
