@@ -4,14 +4,15 @@
 # For more control, add individual board + shield combinations to
 # the `include` property.
 
-board: [ "nice_nano_v2" ]
-shield: [ "charybdis_left", "charybdis_right", "settings_reset" ]
+# Закоментовано масиви для уникнення конфлікту з include
+# board: [ "nice_nano_v2" ]
+# shield: [ "charybdis_left", "charybdis_right", "settings_reset" ]
 
 # Якщо потрібна додаткова кастомізація або майбутнє розширення, залиште include:
-# include:
-#   - board: nice_nano_v2
-#     shield: charybdis_left
-#   - board: nice_nano_v2
-#     shield: charybdis_right
-#   - board: nice_nano_v2
-#     shield: settings_reset
+include:
+  - board: nice_nano_v2
+    shield: charybdis_left nice_oled
+  - board: nice_nano_v2
+    shield: charybdis_right nice_oled
+  - board: nice_nano_v2
+    shield: settings_reset
