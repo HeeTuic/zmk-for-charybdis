@@ -9,10 +9,11 @@
 # shield: [ "charybdis_left", "charybdis_right", "settings_reset" ]
 
 # Якщо потрібна додаткова кастомізація або майбутнє розширення, залиште include:
+# Ліва половинка (central) збирається першою
 include:
-    shield: charybdis_right nice_oled
-  - board: nice_nano_v2
-    shield: settings_reset
   - board: nice_nano_v2
     shield: charybdis_left nice_oled
   - board: nice_nano_v2
+    shield: charybdis_right nice_oled
+  - board: nice_nano_v2
+    shield: settings_reset
