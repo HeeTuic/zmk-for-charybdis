@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -21,10 +22,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <120>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <25 28 31 34 27 26 32 33>;
         };
