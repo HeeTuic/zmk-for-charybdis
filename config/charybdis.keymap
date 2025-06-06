@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -46,12 +47,12 @@
 
         NAV {
             bindings = <
-&sys_reset  &trans         &trans    &trans    &trans     &bootloader        &bootloader   &trans        &trans        &trans        &trans      &sys_reset
-&trans      &kp PAGE_DOWN  &kp HOME  &kp UP    &kp END    &kp PAGE_UP        &trans        &trans        &trans        &trans        &trans      &trans
-&trans      &kp C_VOL_DN   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_UP    &trans        &trans        &trans        &trans        &trans      &trans
-&trans      &trans         &trans    &trans    &trans     &trans             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR  &sys_reset
-                                     &trans    &trans     &trans             &trans        &trans
-                                               &trans     &trans             &trans
+&sys_reset   &trans         &trans    &trans    &trans     &bootloader        &bootloader   &trans        &trans        &trans        &trans      &sys_reset
+&trans       &kp PAGE_DOWN  &kp HOME  &kp UP    &kp END    &kp PAGE_UP        &trans        &trans        &trans        &trans        &trans      &trans
+&bootloader  &kp C_VOL_DN   &kp LEFT  &kp DOWN  &kp RIGHT  &kp C_VOLUME_UP    &trans        &trans        &trans        &trans        &trans      &bootloader
+&trans       &trans         &trans    &trans    &trans     &trans             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR  &sys_reset
+                                      &trans    &trans     &trans             &trans        &trans
+                                                &trans     &trans             &trans
             >;
         };
 
