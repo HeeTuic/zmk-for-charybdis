@@ -34,24 +34,4 @@
 	  		, <&pro_micro 9 (GPIO_ACTIVE_HIGH)>
             ;
     };
-
-	trackballs {
-		compatible = "zmk,keymap-trackballs";
-		trackballs = <&trackball>;
-	};
 };
-
-&spi0 {
-	compatible = "nordic,nrf-spim";
-	status = "disabled";
-
-	trackball: trackball@0 {
-		compatible = "pixart,pmw3610";
-		status = "disabled";
-		reg = <0>;
-		label = "TRACKBALL";
-		spi-max-frequency = <2000000>;
-		duplex = <2048>; // required by 3-wire spi
-	};
-};
-
