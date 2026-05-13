@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: sparkfun_pro_micro_rp2040
     shield: charybdis_left
-  - board: nice_nano_v2
+  - board: sparkfun_pro_micro_rp2040
     shield: charybdis_right
-  - board: nice_nano_v2
+  - board: sparkfun_pro_micro_rp2040
     shield: settings_reset
