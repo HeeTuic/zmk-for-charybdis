@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - \
+  - RSHFT
   - Tab
   - Q
   - W
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - BSPC
+  - RSHFT
   - Shift
   - A
   - S
@@ -48,12 +48,12 @@ layers:
   - ','
   - .
   - {t: /, h: Mouse}
-  - ESC
+  - RSHFT
   - LEFT WIN
   - Space
   - {t: Enter, h: Lower}
   - {t: Enter, h: Raise}
-  - Alt
+  - RSHFT
   - Alt
   - CAPSLOCK
   - DEL
